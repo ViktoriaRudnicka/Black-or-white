@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="body">
+
+    <div class="wrap">
+        <header>
+            <div class="logo"> <span id="blackTheme"> Black</span> or <span id="whiteTheme">white</span></div>
+            <nav>
+                <span>Home</span><span>About</span><span>Sesvise</span><span>Contact</span>
+            </nav>
+        </header>
+        <main>
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae accusantium beatae
+                rem, eaque tempora
+                quis totam quo, officia veritatis magni dicta, nulla quam excepturi! Accusantium doloribus iste sit
+                placeat?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolores rerum libero? Natus
+                dicta
+                qui modi eius tenetur molestiae, consequuntur vel sunt dolorum, laboriosam possimus porro voluptatibus
+                et
+                debitis sint! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, corporis rerum.
+                Corrupti
+                praesentium blanditiis veritatis aliquid, sed doloremque velit dolores? Ullam nihil impedit ipsa, iusto
+                quibusdam voluptate omnis excepturi sed?
+            </p>
+            <div class="buttons_conteiner">
+                <button id="changeColor">Change text color </button>
+                <button id="changeBacground">Set random bacground</button>
+                <button id="changeText">Change text</button>
+                <button id="addPhoto">Add photo</button>
+                <button id="AddАnimation">Add animation</button>
+            </div>
+            <div id="animation" class="animation">
+                <img class="sun" src="/pngwing.com.png" onclick="this.style.left='450px'">
+            </div>
+            <div id="colorPalitra" class="palitra">
+                <div id="red" style="background-color: red;"></div>
+                <div id="green" style="background-color: green;"></div>
+                <div id="blue" style="background-color: blue;"></div>
+                <div id="yellow" style="background-color: yellow;"></div>
+                <div id="pink" style="background-color: pink;"></div>
+                <div class="other">
+                    <input type="color" id="otherColor">
+                </div>
+            </div>
+            <div class="center" id="center">
+                <textarea id="areaPlace" cols="30" rows="10" placeholder="Enter your text..."></textarea>
+                <button class="save" id="save">
+                    Save
+                </button>
+        </main>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

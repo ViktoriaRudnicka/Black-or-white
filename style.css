@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    padding: 10px 0;
+}
+
+.buttons_conteiner {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons_conteiner button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.buttons_conteiner button:hover {
+    background-color: black;
+    color: white;
+}
+
+.palitra {
+    display: none;
+    justify-content: center;
+}
+
+.palitra div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.other input {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.center {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 30px;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 0 2px 10px black;
+}
+
+.save {
+    padding: 10px 30px;
+    background-color: aquamarine;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.save:hover {
+    background-color: rgb(97, 193, 161);
+}
+
+.visibleBlock {
+    display: flex;
+}
+
+.body_photo {
+    background-image: url(/dima-solomin-yYfV9KkccsE-unsplash.jpg);
+    background-size: 100%;
+}
+
+.animation img {
+    border-radius: 30px;
+}
+.sun {
+    position: relative;
+    width: 177px;
+    height: 160px;
+    left: 0px;
+    transition: left 5s cubic-bezier(0.0, 0.5, 0.5, 1.0);
+    animation: go-left-right 8s infinite alternate;
+
+  }
+ 
+  @keyframes go-left-right {        
+    from { left: 0px;
+    transform: rotate(0deg); }           
+    to { left: calc(90% - 50px);
+    transform: rotate(360deg);} 
+  }
+.animation {
+    display: none;
+}
+.animationAdd {
+    display: block;
+}
